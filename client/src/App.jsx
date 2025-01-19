@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router'
 import RegisterPage from './pages/Register'
 import LoginPage from './pages/Login'
+import MovieList from './pages/MovieList'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
 
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/movies" element={<MovieList />} />
 
         {/* <Route path="concerts">
           <Route index element={<ConcertsHome />} />

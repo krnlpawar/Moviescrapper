@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import connectDb from './database/db.js';
 import authRoutes from './routes/auth.route.js';
-import contactRoutes from './routes/contacts.route.js';
+import categoryRoutes from './routes/category.route.js';
 import cookieParser from 'cookie-parser';
 import passport from './config/passport.config.js';
 import session from 'express-session';
@@ -38,7 +38,7 @@ app.use(cors({
 connectDb();
 
 app.use(authRoutes)
-app.use(contactRoutes)
+app.use(categoryRoutes)
 
 // Handle 404 errors
 app.use((req, res, next) => {
